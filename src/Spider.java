@@ -38,7 +38,7 @@ public class Spider {
 	}
 	private void sendGet(String site,String fileType) throws Exception {
  
-		String url = "https://www.google.com/search?q=site:"+site+"+filetype:"+fileType;
+		String url = "https://www.google.com/search?num=500&q=site:"+site+"+filetype:"+fileType;
      try {
     	
 		URL obj = new URL(url);
@@ -80,7 +80,7 @@ public class Spider {
 		System.exit(0);
 	}
      } catch (Exception e) {
-		System.err.println("Errör : " + e.getMessage() );
+		System.err.println("Errï¿½r : " + e.getMessage() );
 	  }
    }
  
